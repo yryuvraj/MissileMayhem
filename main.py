@@ -259,7 +259,7 @@ def main():
         player.move_lasers(-laser_vel, enemies)
 
 def main_menu():
-    title_font = pygame.font.SysFont("comicsans", 70)
+    title_font = pygame.font.SysFont("arial", 70)
     run = True
     while run:
         WIN.blit(BG, (0,0))
