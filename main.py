@@ -1,5 +1,6 @@
 import pygame
 import os
+import time
 import random
 pygame.font.init()
 from pygame import mixer
@@ -262,7 +263,7 @@ def main_menu():
     run = True
     while run:
         WIN.blit(BG, (0,0))
-        title_label = title_font.render("Press Mouse to Start", 1, (155,155,155))
+        title_label = title_font.render("Click to Start", 1, (155,155,155))
         WIN.blit(title_label, (WIDTH/2 - title_label.get_width()/2, 350))
         pygame.display.update()
         for event in pygame.event.get():
